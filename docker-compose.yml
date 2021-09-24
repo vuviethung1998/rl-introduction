@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  rl_intro:
+      image: rl_notebook:latest
+      volumes:
+        - ./src:/home/rl_notebook
+      ports:
+        - 8889:8888
+      container_name: rl_notebook_container
